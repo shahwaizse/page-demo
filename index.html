@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahwaiz's Website</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #600060, #2E0854); /* Adjusted gradient colors */
+            color: #ffffff; /* White text color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed; /* Keeps the background fixed */
+            background-repeat: no-repeat; /* Prevents the background from repeating */
+            background-size: cover; /* Scales the background to cover the entire viewport */
+        }
+
+        /* Add glassy background to sections */
+        .projects, .flagship-project {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for the sections */
+            padding: 20px; /* Add some padding to the sections */
+            border-radius: 15px; /* Rounded corners for the sections */
+        }
+
+        .header {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 100px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the greeting */
+        }
+
+        .tagline {
+            font-size: 18px;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        .connect {
+            margin-top: 50px;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icons li {
+            margin: 0 20px;
+        }
+
+        .social-icons li img {
+            width: 50px; /* Initial size of social media icons */
+            height: 50px;
+            transition: transform 0.2s; /* Add a smooth transition effect */
+        }
+
+        .social-icons li img:hover {
+            transform: scale(1.2); /* Increase size on hover */
+        }
+
+        /* Flagship Project Section */
+        .flagship-project h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to section headings */
+        }
+
+        .flagship-project .project {
+            margin-top: 20px;
+        }
+
+        .flagship-project .project h3 {
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to project headings */
+        }
+
+        .flagship-project .project p {
+            font-size: 16px;
+            opacity: 0.9; /* Slightly darker text */
+            color: #ffffff; /* White text color */
+        }
+
+        .flagship-project .project iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        /* Keep project icons horizontal */
+        .projects .project {
+            display: inline-block;
+            margin: 20px;
+            vertical-align: top; /* Align icons at the top */
+        }
+
+        .projects .project img {
+            width: 50px; /* Initial size of project icons */
+            height: 50px;
+            transition: transform 0.2s; /* Add a smooth transition effect */
+        }
+
+        .projects .project img:hover {
+            transform: scale(1.2); /* Increase size on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Hi, I'm Muhammad Shahwaiz 👋</div>
+    <div class="tagline">A software engineering student who's interested in web development and APIs.</div>
+
+    <div class="connect">
+        <h2>Connect with me</h2>
+        <ul class="social-icons">
+            <li><a href="https://github.com/shahwaizse"><img src="github.png" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-shahwaiz-3b74ab267"><img src="linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/shahwaizse/"><img src="insta.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/icycofi"><img src="twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </div>
+
+    <div class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>PokeMem</h3>
+            <a href="https://poke-mem-gamma.vercel.app"><img src="poke.png" alt="Project 1"></a>
+        </div>
+        <div class="project">
+            <h3>Face Detector</h3>
+            <a href="https://github.com/shahwaizse/winform-faces"><img src="face.png" alt="Project 2"></a>
+        </div>
+        <div class="project">
+            <h3>DSA Final</h3>
+            <a href="https://github.com/shahwaizse/dsa-final"><img src="algo.png" alt="Project 3"></a>
+        </div>
+        <div class="project">
+            <h3>Java Point-of-Sales</h3>
+            <a href="https://github.com/shahwaizse/pos-terminal"><img src="market.png" alt="Project 4"></a>
+        </div>
+        <!-- Add more project sections as needed -->
+        
+        <!-- Flagship Project Section -->
+        <div class="flagship-project">
+            <h2>Currently Working On...</h2>
+            <div class="project">
+                <h3>PokeMem</h3>
+                <p>This app includes a ton of technologies I've learnt over the past few months including React from The Odin Project and API usage from the Postman Student Expert program.</p>
+                <br>
+                <p>The goal of the game is to not click the same Pokemon twice!</p>
+                <!-- Replace 'project-iframe-src' with the actual URL of your project's website -->
+                <iframe src="https://poke-mem-gamma.vercel.app" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
